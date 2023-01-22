@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Parking;
 use App\Models\Vehicle;
+use App\Observers\ParkingObserver;
 use App\Observers\VehicleObserver;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -29,6 +31,7 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $observers = [
         Vehicle::class => [VehicleObserver::class],
+        Parking::class => [ParkingObserver::class],
     ];
 
     /**

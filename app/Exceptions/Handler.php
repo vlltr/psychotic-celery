@@ -52,5 +52,13 @@ class Handler extends ExceptionHandler
                 ], Response::HTTP_NOT_FOUND);
             }
         });
+
+        $this->renderable(function (NotFoundHttpException  $e, $request) {
+            if($request->is('api/v1/parking/*')){
+                return response()->json([
+                    'message' => 'Parking not found',
+                ], Response::HTTP_NOT_FOUND);
+            }
+        });
     }
 }
