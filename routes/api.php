@@ -21,8 +21,8 @@ Route::prefix('v1')->group(function () {
         //Vehicle routes
         Route::apiResource('vehicles', \App\Http\Controllers\Api\V1\VehicleController::class);
         //Parking routes
-        Route::post('parking/start', [\App\Http\Controllers\Api\V1\ParkingController::class, 'start']);
-        Route::get('parking/{parking}', [\App\Http\Controllers\Api\V1\ParkingController::class, 'show']);
-        Route::put('parking/{parking}', [\App\Http\Controllers\Api\V1\ParkingController::class, 'stop']);
+        Route::post('parkings/start', [\App\Http\Controllers\Api\V1\ParkingController::class, 'start']);
+        Route::get('parkings/{parking}', [\App\Http\Controllers\Api\V1\ParkingController::class, 'show']);
+        Route::put('parkings/{parking}', [\App\Http\Controllers\Api\V1\ParkingController::class, 'stop']);
     });
 });
