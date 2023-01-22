@@ -4,11 +4,13 @@ use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\Api\V1\Auth;
 
 Route::prefix('v1')->group(function () {
-    //Profile routes
     Route::middleware('auth:sanctum')->group(function () {
+        //Profile routes
         Route::get('profile', [Auth\ProfileController::class, 'show']);
         Route::put('profile', [Auth\ProfileController::class, 'update']);
         Route::put('password', Auth\PasswordUpdateController::class);
+        //Vehicle routes
+        Route::apiResource('vehicles', \App\Http\Controllers\Api\V1\VehicleController::class);
     });
     
     Route::prefix('auth')->group(function () {
