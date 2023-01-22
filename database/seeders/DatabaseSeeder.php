@@ -14,11 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        \App\Models\Zone::create(['name' => 'General', 'price_per_hour' => 1.25]);
+        \App\Models\Zone::create(['name' => 'VIP', 'price_per_hour' => 8]);
     }
 }
