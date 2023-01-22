@@ -8,6 +8,9 @@ use App\Http\Resources\VehicleResource;
 use App\Models\Vehicle;
 use Illuminate\Http\Response;
 
+/**
+ * @group Vehicles
+ */
 class VehicleController extends Controller
 {
     public function index()
@@ -34,12 +37,6 @@ class VehicleController extends Controller
         return response()->json(VehicleResource::make($vehicle), Response::HTTP_ACCEPTED);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Vehicle  $vehicle
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Vehicle $vehicle)
     {
         $vehicle->delete();
