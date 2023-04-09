@@ -21,8 +21,13 @@ Route::prefix('v1')->group(function () {
         //Vehicle routes
         Route::apiResource('vehicles', \App\Http\Controllers\Api\V1\VehicleController::class);
         //Parking routes
+        Route::get('parkings', [\App\Http\Controllers\Api\V1\ParkingController::class, 'index']);
+        Route::get('parkings/history', [\App\Http\Controllers\Api\V1\ParkingController::class, 'history']);
         Route::post('parkings/start', [\App\Http\Controllers\Api\V1\ParkingController::class, 'start']);
         Route::get('parkings/{parking}', [\App\Http\Controllers\Api\V1\ParkingController::class, 'show']);
-        Route::put('parkings/{parking}', [\App\Http\Controllers\Api\V1\ParkingController::class, 'stop']);
+        Route::bind('activeParking', function ($id) {
+            return App\Models\Parking::where('id', $id)->active()->firstOrFail();
+        });
+        Route::put('parkings/{activeParking}', [\App\Http\Controllers\Api\V1\ParkingController::class, 'stop']);
     });
 });
