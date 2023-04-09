@@ -20,7 +20,7 @@ class ParkingResource extends JsonResource
             $this->start_time,
             $this->stop_time
         );
-        
+
         return [
             'zone' => [
                 'name' => $this->zone->name,
@@ -29,6 +29,7 @@ class ParkingResource extends JsonResource
             'vehicle' => [
                 'plate_number' => $this->vehicle->plate_number,
             ],
+            'id' => $this->id,
             'start_time' => $this->start_time->toDateTimeString(),
             'stop_time' => $this->stop_time?->toDateTimeString(),
             'total_price' => $totalPrice,
