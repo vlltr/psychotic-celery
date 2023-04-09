@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "b79ef5d8-dbfa-4f7d-b9cb-088e5d9fbf05",
+        "_postman_id": "be8f805c-f495-4f71-8a3c-6ff6d8d04bad",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"sblrsqevttzjejheoj\",\"email\":\"atoy@example.net\",\"password\":\"optio\"}"
+                            "raw": "{\"name\":\"y\",\"email\":\"pturner@example.com\",\"password\":\"facilis\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"iokon@example.net\",\"password\":\"est\"}"
+                            "raw": "{\"email\":\"sierra.heathcote@example.org\",\"password\":\"non\"}"
                         },
                         "description": "",
                         "auth": {
@@ -131,7 +131,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"knftpflo\",\"email\":\"eulalia.muller@example.net\"}"
+                            "raw": "{\"name\":\"i\",\"email\":\"xankunding@example.net\"}"
                         },
                         "description": "",
                         "auth": {
@@ -162,7 +162,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"current_password\":\"est\",\"password\":\"molestias\"}"
+                            "raw": "{\"current_password\":\"sit\",\"password\":\"sed\"}"
                         },
                         "description": "",
                         "auth": {
@@ -233,7 +233,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"vehicle_id\":7,\"zone_id\":2}"
+                            "raw": "{\"vehicle_id\":15,\"zone_id\":15}"
                         },
                         "description": "",
                         "auth": {
@@ -254,7 +254,7 @@
                                 {
                                     "id": "parking_id",
                                     "key": "parking_id",
-                                    "value": "15",
+                                    "value": "3",
                                     "description": "The ID of the parking."
                                 }
                             ]
@@ -290,7 +290,7 @@
                                 {
                                     "id": "parking_id",
                                     "key": "parking_id",
-                                    "value": "10",
+                                    "value": "17",
                                     "description": "The ID of the parking."
                                 }
                             ]
@@ -370,7 +370,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"plate_number\":\"msvnnjbvlpvluslnetamsdngw\"}"
+                            "raw": "{\"plate_number\":\"kzfkhaynjcntrkvzordu\",\"description\":\"Autem voluptatem tempora tempore accusantium.\"}"
                         },
                         "description": "",
                         "auth": {
@@ -391,7 +391,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "11",
+                                    "value": "1",
                                     "description": "The ID of the vehicle."
                                 }
                             ]
@@ -427,7 +427,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "20",
+                                    "value": "7",
                                     "description": "The ID of the vehicle."
                                 }
                             ]
@@ -445,7 +445,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"plate_number\":\"rwvhsvkflzsy\"}"
+                            "raw": "{\"plate_number\":\"drzhgwkzmxcmuwzycikfd\",\"description\":\"Assumenda mollitia alias possimus optio.\"}"
                         },
                         "description": "",
                         "auth": {
@@ -466,7 +466,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "15",
+                                    "value": "10",
                                     "description": "The ID of the vehicle."
                                 }
                             ]

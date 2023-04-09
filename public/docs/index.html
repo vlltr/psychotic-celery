@@ -155,7 +155,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: January 22, 2023</li>
+        <li>Last updated: April 9, 2023</li>
     </ul>
 </div>
 
@@ -171,7 +171,7 @@
 You can switch the language used with the tabs at the top right (or from the nav menu at the top left on mobile).</aside>
 
         <h1 id="authenticating-requests">Authenticating requests</h1>
-<p>To authenticate requests, include an <strong><code>Authorization</code></strong> header with the value <strong><code>"Bearer {TOKEN}"</code></strong>.</p>
+<p>This API is authenticated by sending an <strong><code>Authorization</code></strong> header with the value <strong><code>"Bearer {TOKEN}"</code></strong>.</p>
 <p>All authenticated endpoints are marked with a <code>requires authentication</code> badge in the documentation below.</p>
 <p>You can retrieve your token by visiting your dashboard and clicking <b>Generate API token</b>.</p>
 
@@ -196,9 +196,9 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"sblrsqevttzjejheoj\",
-    \"email\": \"atoy@example.net\",
-    \"password\": \"optio\"
+    \"name\": \"y\",
+    \"email\": \"pturner@example.com\",
+    \"password\": \"facilis\"
 }"
 </code></pre></div>
 
@@ -214,9 +214,9 @@ const headers = {
 };
 
 let body = {
-    "name": "sblrsqevttzjejheoj",
-    "email": "atoy@example.net",
-    "password": "optio"
+    "name": "y",
+    "email": "pturner@example.com",
+    "password": "facilis"
 };
 
 fetch(url, {
@@ -297,10 +297,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-v1-auth-register"
-               value="sblrsqevttzjejheoj"
+               value="y"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>sblrsqevttzjejheoj</code></p>
+<p>Must not be greater than 255 characters. Example: <code>y</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -308,10 +308,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-v1-auth-register"
-               value="atoy@example.net"
+               value="pturner@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>atoy@example.net</code></p>
+<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>pturner@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -319,10 +319,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-v1-auth-register"
-               value="optio"
+               value="facilis"
                data-component="body">
     <br>
-<p>Example: <code>optio</code></p>
+<p>Example: <code>facilis</code></p>
         </div>
         </form>
 
@@ -343,8 +343,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"iokon@example.net\",
-    \"password\": \"est\"
+    \"email\": \"sierra.heathcote@example.org\",
+    \"password\": \"non\"
 }"
 </code></pre></div>
 
@@ -360,8 +360,8 @@ const headers = {
 };
 
 let body = {
-    "email": "iokon@example.net",
-    "password": "est"
+    "email": "sierra.heathcote@example.org",
+    "password": "non"
 };
 
 fetch(url, {
@@ -442,10 +442,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-v1-auth-login"
-               value="iokon@example.net"
+               value="sierra.heathcote@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>iokon@example.net</code></p>
+<p>Must be a valid email address. Example: <code>sierra.heathcote@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -453,10 +453,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-v1-auth-login"
-               value="est"
+               value="non"
                data-component="body">
     <br>
-<p>Example: <code>est</code></p>
+<p>Example: <code>non</code></p>
         </div>
         </form>
 
@@ -577,8 +577,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"knftpflo\",
-    \"email\": \"eulalia.muller@example.net\"
+    \"name\": \"i\",
+    \"email\": \"xankunding@example.net\"
 }"
 </code></pre></div>
 
@@ -594,8 +594,8 @@ const headers = {
 };
 
 let body = {
-    "name": "knftpflo",
-    "email": "eulalia.muller@example.net"
+    "name": "i",
+    "email": "xankunding@example.net"
 };
 
 fetch(url, {
@@ -676,10 +676,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="PUTapi-v1-profile"
-               value="knftpflo"
+               value="i"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>knftpflo</code></p>
+<p>Must not be greater than 255 characters. Example: <code>i</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -687,10 +687,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="PUTapi-v1-profile"
-               value="eulalia.muller@example.net"
+               value="xankunding@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>eulalia.muller@example.net</code></p>
+<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>xankunding@example.net</code></p>
         </div>
         </form>
 
@@ -711,8 +711,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"current_password\": \"est\",
-    \"password\": \"molestias\"
+    \"current_password\": \"sit\",
+    \"password\": \"sed\"
 }"
 </code></pre></div>
 
@@ -728,8 +728,8 @@ const headers = {
 };
 
 let body = {
-    "current_password": "est",
-    "password": "molestias"
+    "current_password": "sit",
+    "password": "sed"
 };
 
 fetch(url, {
@@ -810,10 +810,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="current_password"                data-endpoint="PUTapi-v1-password"
-               value="est"
+               value="sit"
                data-component="body">
     <br>
-<p>Example: <code>est</code></p>
+<p>Example: <code>sit</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -821,10 +821,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="PUTapi-v1-password"
-               value="molestias"
+               value="sed"
                data-component="body">
     <br>
-<p>Example: <code>molestias</code></p>
+<p>Example: <code>sed</code></p>
         </div>
         </form>
 
@@ -953,8 +953,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"vehicle_id\": 7,
-    \"zone_id\": 2
+    \"vehicle_id\": 15,
+    \"zone_id\": 15
 }"
 </code></pre></div>
 
@@ -970,8 +970,8 @@ const headers = {
 };
 
 let body = {
-    "vehicle_id": 7,
-    "zone_id": 2
+    "vehicle_id": 15,
+    "zone_id": 15
 };
 
 fetch(url, {
@@ -1052,10 +1052,10 @@ fetch(url, {
  &nbsp;
                 <input type="number" style="display: none"
                name="vehicle_id"                data-endpoint="POSTapi-v1-parkings-start"
-               value="7"
+               value="15"
                data-component="body">
     <br>
-<p>Example: <code>7</code></p>
+<p>Example: <code>15</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>zone_id</code></b>&nbsp;&nbsp;
@@ -1063,10 +1063,10 @@ fetch(url, {
  &nbsp;
                 <input type="number" style="display: none"
                name="zone_id"                data-endpoint="POSTapi-v1-parkings-start"
-               value="2"
+               value="15"
                data-component="body">
     <br>
-<p>Example: <code>2</code></p>
+<p>Example: <code>15</code></p>
         </div>
         </form>
 
@@ -1083,14 +1083,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/v1/parkings/15" \
+    --get "http://localhost/api/v1/parkings/3" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/parkings/15"
+    "http://localhost/api/v1/parkings/3"
 );
 
 const headers = {
@@ -1175,10 +1175,10 @@ fetch(url, {
  &nbsp;
                 <input type="number" style="display: none"
                name="parking_id"                data-endpoint="GETapi-v1-parkings--parking_id-"
-               value="15"
+               value="3"
                data-component="url">
     <br>
-<p>The ID of the parking. Example: <code>15</code></p>
+<p>The ID of the parking. Example: <code>3</code></p>
             </div>
                     </form>
 
@@ -1195,14 +1195,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/v1/parkings/10" \
+    "http://localhost/api/v1/parkings/17" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/parkings/10"
+    "http://localhost/api/v1/parkings/17"
 );
 
 const headers = {
@@ -1287,10 +1287,10 @@ fetch(url, {
  &nbsp;
                 <input type="number" style="display: none"
                name="parking_id"                data-endpoint="PUTapi-v1-parkings--parking_id-"
-               value="10"
+               value="17"
                data-component="url">
     <br>
-<p>The ID of the parking. Example: <code>10</code></p>
+<p>The ID of the parking. Example: <code>17</code></p>
             </div>
                     </form>
 
@@ -1415,7 +1415,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"plate_number\": \"msvnnjbvlpvluslnetamsdngw\"
+    \"plate_number\": \"kzfkhaynjcntrkvzordu\",
+    \"description\": \"Autem voluptatem tempora tempore accusantium.\"
 }"
 </code></pre></div>
 
@@ -1431,7 +1432,8 @@ const headers = {
 };
 
 let body = {
-    "plate_number": "msvnnjbvlpvluslnetamsdngw"
+    "plate_number": "kzfkhaynjcntrkvzordu",
+    "description": "Autem voluptatem tempora tempore accusantium."
 };
 
 fetch(url, {
@@ -1512,10 +1514,21 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="plate_number"                data-endpoint="POSTapi-v1-vehicles"
-               value="msvnnjbvlpvluslnetamsdngw"
+               value="kzfkhaynjcntrkvzordu"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>msvnnjbvlpvluslnetamsdngw</code></p>
+<p>Must not be greater than 255 characters. Example: <code>kzfkhaynjcntrkvzordu</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+               name="description"                data-endpoint="POSTapi-v1-vehicles"
+               value="Autem voluptatem tempora tempore accusantium."
+               data-component="body">
+    <br>
+<p>Must not be greater than 255 characters. Example: <code>Autem voluptatem tempora tempore accusantium.</code></p>
         </div>
         </form>
 
@@ -1532,14 +1545,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/v1/vehicles/11" \
+    --get "http://localhost/api/v1/vehicles/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/vehicles/11"
+    "http://localhost/api/v1/vehicles/1"
 );
 
 const headers = {
@@ -1624,10 +1637,10 @@ fetch(url, {
  &nbsp;
                 <input type="number" style="display: none"
                name="id"                data-endpoint="GETapi-v1-vehicles--id-"
-               value="11"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the vehicle. Example: <code>11</code></p>
+<p>The ID of the vehicle. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -1644,18 +1657,19 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/v1/vehicles/20" \
+    "http://localhost/api/v1/vehicles/7" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"plate_number\": \"rwvhsvkflzsy\"
+    \"plate_number\": \"drzhgwkzmxcmuwzycikfd\",
+    \"description\": \"Assumenda mollitia alias possimus optio.\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/vehicles/20"
+    "http://localhost/api/v1/vehicles/7"
 );
 
 const headers = {
@@ -1664,7 +1678,8 @@ const headers = {
 };
 
 let body = {
-    "plate_number": "rwvhsvkflzsy"
+    "plate_number": "drzhgwkzmxcmuwzycikfd",
+    "description": "Assumenda mollitia alias possimus optio."
 };
 
 fetch(url, {
@@ -1749,10 +1764,10 @@ fetch(url, {
  &nbsp;
                 <input type="number" style="display: none"
                name="id"                data-endpoint="PUTapi-v1-vehicles--id-"
-               value="20"
+               value="7"
                data-component="url">
     <br>
-<p>The ID of the vehicle. Example: <code>20</code></p>
+<p>The ID of the vehicle. Example: <code>7</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1761,10 +1776,21 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="plate_number"                data-endpoint="PUTapi-v1-vehicles--id-"
-               value="rwvhsvkflzsy"
+               value="drzhgwkzmxcmuwzycikfd"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>rwvhsvkflzsy</code></p>
+<p>Must not be greater than 255 characters. Example: <code>drzhgwkzmxcmuwzycikfd</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+               name="description"                data-endpoint="PUTapi-v1-vehicles--id-"
+               value="Assumenda mollitia alias possimus optio."
+               data-component="body">
+    <br>
+<p>Must not be greater than 255 characters. Example: <code>Assumenda mollitia alias possimus optio.</code></p>
         </div>
         </form>
 
@@ -1781,14 +1807,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/v1/vehicles/15" \
+    "http://localhost/api/v1/vehicles/10" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/vehicles/15"
+    "http://localhost/api/v1/vehicles/10"
 );
 
 const headers = {
@@ -1873,10 +1899,10 @@ fetch(url, {
  &nbsp;
                 <input type="number" style="display: none"
                name="id"                data-endpoint="DELETEapi-v1-vehicles--id-"
-               value="15"
+               value="10"
                data-component="url">
     <br>
-<p>The ID of the vehicle. Example: <code>15</code></p>
+<p>The ID of the vehicle. Example: <code>10</code></p>
             </div>
                     </form>
 

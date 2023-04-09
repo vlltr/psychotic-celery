@@ -40,15 +40,15 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: sblrsqevttzjejheoj
+                  example: 'y'
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: atoy@example.net
+                  example: pturner@example.com
                 password:
                   type: string
                   description: ''
-                  example: optio
+                  example: facilis
               required:
                 - name
                 - email
@@ -87,11 +87,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: iokon@example.net
+                  example: sierra.heathcote@example.org
                 password:
                   type: string
                   description: ''
-                  example: est
+                  example: non
               required:
                 - email
                 - password
@@ -152,11 +152,11 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: knftpflo
+                  example: i
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: eulalia.muller@example.net
+                  example: xankunding@example.net
               required:
                 - name
                 - email
@@ -194,11 +194,11 @@ paths:
                 current_password:
                   type: string
                   description: ''
-                  example: est
+                  example: sit
                 password:
                   type: string
                   description: ''
-                  example: molestias
+                  example: sed
               required:
                 - current_password
                 - password
@@ -260,11 +260,11 @@ paths:
                 vehicle_id:
                   type: integer
                   description: ''
-                  example: 7
+                  example: 15
                 zone_id:
                   type: integer
                   description: ''
-                  example: 2
+                  example: 15
               required:
                 - vehicle_id
                 - zone_id
@@ -321,7 +321,7 @@ paths:
         in: path
         name: parking_id
         description: 'The ID of the parking.'
-        example: 15
+        example: 3
         required: true
         schema:
           type: integer
@@ -381,7 +381,11 @@ paths:
                 plate_number:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: msvnnjbvlpvluslnetamsdngw
+                  example: kzfkhaynjcntrkvzordu
+                description:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: 'Autem voluptatem tempora tempore accusantium.'
               required:
                 - plate_number
       security: []
@@ -441,7 +445,11 @@ paths:
                 plate_number:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: rwvhsvkflzsy
+                  example: drzhgwkzmxcmuwzycikfd
+                description:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: 'Assumenda mollitia alias possimus optio.'
               required:
                 - plate_number
       security: []
@@ -473,7 +481,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the vehicle.'
-        example: 11
+        example: 1
         required: true
         schema:
           type: integer

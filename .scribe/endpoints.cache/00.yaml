@@ -28,27 +28,27 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: sblrsqevttzjejheoj
+        example: 'y'
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: atoy@example.net
+        example: pturner@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: optio
+        example: facilis
         type: string
         custom: []
     cleanBodyParameters:
-      name: sblrsqevttzjejheoj
-      email: atoy@example.net
-      password: optio
+      name: 'y'
+      email: pturner@example.com
+      password: facilis
     fileParameters: []
     responses: []
     responseFields: []
@@ -82,19 +82,19 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: iokon@example.net
+        example: sierra.heathcote@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: est
+        example: non
         type: string
         custom: []
     cleanBodyParameters:
-      email: iokon@example.net
-      password: est
+      email: sierra.heathcote@example.org
+      password: non
     fileParameters: []
     responses: []
     responseFields: []
@@ -158,19 +158,19 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: knftpflo
+        example: i
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: eulalia.muller@example.net
+        example: xankunding@example.net
         type: string
         custom: []
     cleanBodyParameters:
-      name: knftpflo
-      email: eulalia.muller@example.net
+      name: i
+      email: xankunding@example.net
     fileParameters: []
     responses: []
     responseFields: []
@@ -204,19 +204,19 @@ endpoints:
         name: current_password
         description: ''
         required: true
-        example: est
+        example: sit
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: molestias
+        example: sed
         type: string
         custom: []
     cleanBodyParameters:
-      current_password: est
-      password: molestias
+      current_password: sit
+      password: sed
     fileParameters: []
     responses: []
     responseFields: []
