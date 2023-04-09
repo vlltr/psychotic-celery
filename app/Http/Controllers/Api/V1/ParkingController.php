@@ -14,11 +14,10 @@ use Illuminate\Http\Response;
  */
 class ParkingController extends Controller
 {
-    public function index(Parking $parking)
+    public function index()
     {
-        $activeParkings = $parking->active()->latest('start_time')->get();
-
-        return ParkingResource::make($activeParkings);
+        $activeParkings = Parking::with('vehicle', 'zone')->active()->latest('start_time')->get();
+        return ParkingResource::collection($activeParkings);
     }
 
     public function history()
