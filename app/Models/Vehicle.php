@@ -10,7 +10,7 @@ class Vehicle extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id', 'plate_number'];
+    protected $fillable = ['user_id', 'plate_number', 'description'];
 
     protected static function booted()
     {

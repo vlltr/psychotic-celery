@@ -22,13 +22,13 @@ class VehicleTest extends TestCase
         $vehicleForJane = Vehicle::factory()->create([
             'user_id' => $jane->id
         ]);
-
         $response = $this->actingAs($john)->getJson('/api/v1/vehicles');
 
         $response->assertStatus(200)
             ->assertJsonStructure(['data'])
             ->assertJsonCount(1, 'data')
             ->assertJsonPath('data.0.plate_number', $vehicleForJohn->plate_number)
+            ->assertJsonPath('data.0.description', $vehicleForJohn->description)
             ->assertJsonMissing($vehicleForJane->toArray());
     }
 
@@ -38,18 +38,25 @@ class VehicleTest extends TestCase
 
         $response = $this->actingAs($user)->postJson('/api/v1/vehicles', [
             'plate_number' => 'P200',
+            'description' => 'Hello World',
         ]);
 
         $response->assertStatus(201)
             ->assertJsonStructure(['data'])
-            ->assertJsonCount(2, 'data')
+            ->assertJsonCount(3, 'data')
             ->assertJsonStructure([
-                'data' => ['0' => 'plate_number'],
+                'data' => [
+                    'plate_number',
+                    'description',
+                ],
             ])
-            ->assertJsonPath('data.plate_number', 'P200');
+            ->assertJsonPath('data.plate_number', 'P200')
+            ->assertJsonPath('data.description', 'Hello World');
+
 
         $this->assertDatabaseHas('vehicles', [
             'plate_number' => 'P200',
+            'description' => 'Hello World',
         ]);
     }
 
@@ -60,14 +67,18 @@ class VehicleTest extends TestCase
 
         $response = $this->actingAs($user)->putJson('/api/v1/vehicles/' . $vehicle->id, [
             'plate_number' => 'P201',
+            'description' => 'Another Description'
         ]);
 
         $response->assertStatus(202)
-            ->assertJsonStructure(['plate_number'])
-            ->assertJsonPath('plate_number', 'P201');
+            ->assertJsonStructure(['plate_number','description'])
+            ->assertJsonPath('plate_number', 'P201')
+            ->assertJsonPath('description', 'Another Description');
+
 
         $this->assertDatabaseHas('vehicles', [
             'plate_number' => 'P201',
+            'description' => 'Another Description'
         ]);
     }
 

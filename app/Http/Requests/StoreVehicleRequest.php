@@ -25,6 +25,7 @@ class StoreVehicleRequest extends FormRequest
     {
         return [
             'plate_number' => ['required', 'max:255'],
+            'description' => ['nullable', 'max:255'],
         ];
     }
 }
